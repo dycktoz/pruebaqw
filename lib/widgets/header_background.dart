@@ -27,9 +27,12 @@ class _HeaderPika extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Container(
-          margin: EdgeInsets.only(top: 30),
+          margin: EdgeInsets.only(top: 100),
           width: double.infinity,
-          child: Icon(Icons.location_city_outlined)),
+          child: Icon(
+            Icons.person_pin_circle_outlined,
+            size: 120,
+          )),
     );
   }
 }
@@ -51,7 +54,6 @@ class _Backgroundbox extends StatelessWidget {
             child: Opacity(
               opacity: 0.2,
               child: Container(
-                color: Colors.red,
                 height: size.width,
                 width: size.width,
               ),

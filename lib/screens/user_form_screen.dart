@@ -9,6 +9,16 @@ class UserFormScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: HeaderBackground(child: CardContainer(child: UserFormWidget())));
+        body: HeaderBackground(
+            child: SingleChildScrollView(
+      child: Column(
+        children: [
+          SizedBox(
+            height: 400,
+          ),
+          CardContainer(child: UserFormWidget()),
+        ],
+      ),
+    )));
   }
 }
